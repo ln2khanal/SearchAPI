@@ -1,0 +1,23 @@
+{
+    "timerange_second": 0,
+    "description": "",
+    "vid": "",
+    "searchname": "User Account Management - list",
+    "timerange_hour": 0,
+    "generated_by": "dashboard",
+    "timerange_day": 7,
+    "timerange_minute": 0,
+    "life_id": "1b7b41971a9f3e3a66949384777af1c5d8c41083",
+    "limit": 100,
+    "query_info": {
+        "every_time_unit": "second",
+        "query_type": "search",
+        "query_filter": "MSWinEventLog AND (event_category=\"User Account Management\" ) OR (sig_id=1015 AND (event_id=626 OR event_id=629)) OR (sig_id=1041 AND event_id=624) OR (sig_id=1043 AND event_id=630) ",
+        "lucene_query": "mswineventlog ((event_category:user\\ account\\ management) OR (_num_sig_id:[1015 TO 1015] (_num_event_id:[626 TO 626] OR _num_event_id:[629 TO 629])) OR (_num_sig_id:[1041 TO 1041] _num_event_id:[624 TO 624]) OR (_num_sig_id:[1043 TO 1043] _num_event_id:[630 TO 630]))",
+        "grouping": null,
+        "columns": null,
+        "aliases": null
+    },
+    "tid": "",
+    "query": "MSWinEventLog AND (event_category=\"User Account Management\" ) OR (sig_id=1015 AND (event_id=626 OR event_id=629)) OR (sig_id=1041 AND event_id=624) OR (sig_id=1043 AND event_id=630) | rename caller_user as user | fields user, action, target_user"
+}
