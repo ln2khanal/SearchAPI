@@ -5,32 +5,37 @@ from LogPointSearcher import LogPointSearcher
 searcher = LogPointSearcher(ip="192.168.2.205", username="admin", secret_key="29cc708f5cee084bb9d7b8c704d6f8e3")
 
 #OK
-#for logpoint in searcher.get_log_points():
-#    print logpoint
+for logpoint in searcher.get_log_points():
+    print logpoint
+print '-----------------------'
 
 # OK
-#for repo in searcher.get_repos():
-#    print repo
+for repo in searcher.get_repos():
+    print repo
+print '-----------------------'
 
 #OK
-#for device in searcher.get_devices():
-#    print device
+for device in searcher.get_devices():
+    print device
+print '-----------------------'
 
 #skip
 #for livesearch in searcher.get_live_searches():
 #    print livesearch
 
 #OK
-#print searcher.get_timezone()
+print searcher.get_timezone()
+print '-----------------------'
 
 
-#search_job = searcher.search('error')
-#if search_job.has_error():
-#    print 'Query has error'
-#    print 'Error Message : ',  search_job.get_error()
-#else:
-#    response = search_job.get_response()
-#    print response
+search_job = searcher.search('error')
+if search_job.has_error():
+    print 'Query has error'
+    print 'Error Message : ',  search_job.get_error()
+else:
+    response = search_job.get_response()
+    print response
+print '-----------------------'
 
 
 
