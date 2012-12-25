@@ -13,6 +13,9 @@ class LogPoint:
             self.name = name
         else:
             self.name = self.ip.replace(".", "_")
+
+    def get_logpoint_ip(self):
+        return self.ip
     
     def __str__(self):
         """

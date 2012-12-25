@@ -9,33 +9,33 @@ for logpoint in searcher.get_log_points():
     print logpoint
 print '-----------------------'
 
-# OK
-for repo in searcher.get_repos():
-    print repo
-print '-----------------------'
-
 #OK
-for device in searcher.get_devices():
-    print device
-print '-----------------------'
-
-#skip
-#for livesearch in searcher.get_live_searches():
-#    print livesearch
-
-#OK
-print searcher.get_timezone()
-print '-----------------------'
-
-
-search_job = searcher.search('error')
-if search_job.has_error():
-    print 'Query has error'
-    print 'Error Message : ',  search_job.get_error()
-else:
-    response = search_job.get_response()
-    print response
-print '-----------------------'
+#for repo in searcher.get_repos():
+#    print repo
+#print '-----------------------'
+#
+##OK
+#for device in searcher.get_devices():
+#    print device
+#print '-----------------------'
+#
+##skip
+##for livesearch in searcher.get_live_searches():
+##    print livesearch
+#
+##OK
+#print searcher.get_timezone()
+#print '-----------------------'
+#
+#
+#search_job = searcher.search('error')
+#if search_job.has_error():
+#    print 'Query has error'
+#    print 'Error Message : ',  search_job.get_error()
+#else:
+#    response = search_job.get_response()
+#    print response
+#print '-----------------------'
 
 
 

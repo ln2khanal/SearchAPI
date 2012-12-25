@@ -35,7 +35,7 @@ class LogPointSearcher:
         
         response = self._get_allowed_data('loginspects')
         allowed_logpoint = response['allowed_loginspects'];
-        
+        print allowed_logpoint
         for data in allowed_logpoint:
             logpoints.append(LogPoint(data["ip"], data["name"]))
 
